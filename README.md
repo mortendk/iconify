@@ -16,3 +16,16 @@ Look at style.scss (or style.css) if you're not
 use the fonticon-template.css
 
 
+##Icon Fonts
+**Websymbols**:
+http://www.justbenicestudio.com/studio/websymbols _OFL license_
+
+**Pictos**:
+http://pictos.drewwilson.com _Commercial_
+
+**Tipogram**:
+http://tipogram.com _Commercial_
+
+**Fico**:
+http://fico.lensco.be _Commercial_
+

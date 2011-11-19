@@ -1,233 +1,149 @@
-@font-face {
-  font-family: 'WebSymbolsRegular';
-  src: url("../fonts/websymbols/websymbols-regular-webfont.eot");
-  src: url("../fonts/websymbols/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/websymbols/websymbols-regular-webfont.woff") format("woff"), url("../fonts/websymbols/websymbols-regular-webfont.ttf") format("truetype"), url("../fonts/websymbols/websymbols-regular-webfont.svg#WebSymbolsRegular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
+@font-face { font-family: 'WebSymbolsRegular'; src: url("../fonts/websymbols/websymbols-regular-webfont.eot"); src: url("../fonts/websymbols/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/websymbols/websymbols-regular-webfont.woff") format("woff"), url("../fonts/websymbols/websymbols-regular-webfont.ttf") format("truetype"), url("../fonts/websymbols/websymbols-regular-webfont.svg#WebSymbolsRegular") format("svg"); font-weight: normal; font-style: normal; }
 
-.icon, .icon-view-portrait, .icon-view-album, .icon-image, .icon-movie, .icon-html, .icon-attachment, .icon-folder, .icon-cloud, .icon-mail, .icon-terminal, .icon-user, .icon-logout, .icon-lock, .icon-lock-open, .icon-up, .icon-prev, .icon-next, .icon-prev-alt, .icon-next-alt, .icon-first, .icon-last, .icon-move, .icon-close, .icon-scale, .icon-reload, .icon-sync, .icon-sort-up, .icon-sort-down, .icon-fold, .icon-fold-closed, .icon-config, .icon-alert, .icon-ok, .icon-ok-alt, .icon-no, .icon-delete, .icon-text, .icon-indent, .icon-outdent, .icon-list, .icon-list-bullets, .icon-list-numbers, .icon-list-images, .icon-star, .icon-heart, header div:before, .icon-heart-alt, header h1 b:after, .icon-tag, .icon-link, .icon-date, .icon-mappin, .icon-search, .icon-chat, .icon-speach, .icon-speach-alt, .icon-repost, .icon-facbook, .icon-googleplus, .icon-linkedin, .icon-rss, .icon-skype, .icon-tumblr, .icon-twitter, .icon-vimeo, .icon-youtube {
-  font-family: WebSymbolsRegular;
-  font-size: 16px;
-  margin-right: 10px;
-  vertical-align: middle; }
+.icon, .icon-view-portrait, .icon-view-album, .icon-image, .icon-movie, .icon-html, .icon-attachment, .icon-folder, .icon-cloud, header h1 b:after, .icon-mail, .icon-terminal, .icon-user, .icon-logout, .icon-lock, .icon-lock-open, .icon-up, .icon-prev, .icon-next, .icon-prev-alt, .icon-next-alt, .icon-first, .icon-last, .icon-move, .icon-close, .icon-scale, .icon-reload, .icon-sync, .icon-sort-up, .icon-sort-down, .icon-fold, .icon-fold-closed, .icon-config, .icon-alert, .icon-ok, .icon-ok-alt, .icon-no, .icon-delete, .icon-text, .icon-indent, .icon-outdent, .icon-list, .icon-list-bullets, .icon-list-numbers, .icon-list-images, .icon-star, .icon-heart, .icon-heart-alt, .icon-tag, .icon-link, .icon-date, .icon-mappin, .icon-search, .icon-chat, .icon-speach, .icon-speach-alt, .icon-repost, .icon-facbook, .icon-googleplus, .icon-linkedin, .icon-rss, .icon-skype, .icon-tumblr, .icon-twitter, .icon-vimeo, .icon-youtube { font-family: WebSymbolsRegular; font-size: 16px; margin-right: 10px; vertical-align: middle; }
 
-.icon-view-portrait {
-  content: "a"; }
+.icon-view-portrait { content: "a"; }
 
-.icon-view-album {
-  content: "a"; }
+.icon-view-album { content: "a"; }
 
-.icon-image {
-  content: "I"; }
+.icon-image { content: "I"; }
 
-.icon-movie {
-  content: "M"; }
+.icon-movie { content: "M"; }
 
-.icon-html {
-  content: "H"; }
+.icon-html { content: "H"; }
 
-.icon-attachment {
-  content: "A"; }
+.icon-attachment { content: "A"; }
 
-.icon-folder {
-  content: "F"; }
+.icon-folder { content: "F"; }
 
-.icon-cloud {
-  content: "C"; }
+.icon-cloud, header h1 b:after { content: "C"; }
 
-.icon-mail {
-  content: "@"; }
+.icon-mail { content: "@"; }
 
-.icon-terminal {
-  content: "_"; }
+.icon-terminal { content: "_"; }
 
-.icon-user {
-  content: "U"; }
+.icon-user { content: "U"; }
 
-.icon-logout {
-  content: "X"; }
+.icon-logout { content: "X"; }
 
-.icon-lock {
-  content: "x"; }
+.icon-lock { content: "x"; }
 
-.icon-lock-open {
-  content: "w"; }
+.icon-lock-open { content: "w"; }
 
-.icon-up {
-  content: ":"; }
+.icon-up { content: ":"; }
 
-.icon-up {
-  content: ";"; }
+.icon-up { content: ";"; }
 
-.icon-prev {
-  content: "("; }
+.icon-prev { content: "("; }
 
-.icon-next {
-  content: "("; }
+.icon-next { content: "("; }
 
-.icon-prev-alt {
-  content: "<"; }
+.icon-prev-alt { content: "<"; }
 
-.icon-next-alt {
-  content: ">"; }
+.icon-next-alt { content: ">"; }
 
-.icon-first {
-  content: " "; }
+.icon-first { content: " "; }
 
-.icon-last {
-  content: " "; }
+.icon-last { content: " "; }
 
-.icon-move {
-  content: "~"; }
+.icon-move { content: "~"; }
 
-.icon-close {
-  content: "×"; }
+.icon-close { content: "×"; }
 
-.icon-scale {
-  content: "&"; }
+.icon-scale { content: "&"; }
 
-.icon-reload {
-  content: "*"; }
+.icon-reload { content: "*"; }
 
-.icon-sync {
-  content: "V"; }
+.icon-sync { content: "V"; }
 
-.icon-sort-up {
-  content: "{"; }
+.icon-sort-up { content: "{"; }
 
-.icon-sort-down {
-  content: "}"; }
+.icon-sort-down { content: "}"; }
 
-.icon-fold {
-  content: "["; }
+.icon-fold { content: "["; }
 
-.icon-fold-closed {
-  content: "]"; }
+.icon-fold-closed { content: "]"; }
 
-.icon-config {
-  content: "S"; }
+.icon-config { content: "S"; }
 
-.icon-alert {
-  content: "W"; }
+.icon-alert { content: "W"; }
 
-.icon-ok {
-  content: "/"; }
+.icon-ok { content: "/"; }
 
-.icon-ok-alt {
-  content: "."; }
+.icon-ok-alt { content: "."; }
 
-.icon-no {
-  content: "."; }
+.icon-no { content: "."; }
 
-.icon-delete {
-  content: "'"; }
+.icon-delete { content: "'"; }
 
-.icon-text {
-  content: "T"; }
+.icon-text { content: "T"; }
 
-.icon-indent {
-  content: "n"; }
+.icon-indent { content: "n"; }
 
-.icon-outdent {
-  content: "o"; }
+.icon-outdent { content: "o"; }
 
-.icon-list {
-  content: "²"; }
+.icon-list { content: "²"; }
 
-.icon-list-bullets {
-  content: "p"; }
+.icon-list-bullets { content: "p"; }
 
-.icon-list-numbers {
-  content: "q"; }
+.icon-list-numbers { content: "q"; }
 
-.icon-list-images {
-  content: "³"; }
+.icon-list-images { content: "³"; }
 
-.icon-star {
-  content: "R"; }
+.icon-star { content: "R"; }
 
-.icon-heart, header div:before {
-  content: "N"; }
+.icon-heart { content: "N"; }
 
-.icon-heart-alt, header h1 b:after {
-  content: "O"; }
+.icon-heart-alt { content: "O"; }
 
-.icon-tag {
-  content: ","; }
+.icon-tag { content: ","; }
 
-.icon-link {
-  content: "K"; }
+.icon-link { content: "K"; }
 
-.icon-date {
-  content: "P"; }
+.icon-date { content: "P"; }
 
-.icon-mappin {
-  content: "?"; }
+.icon-mappin { content: "?"; }
 
-.icon-search {
-  content: "L"; }
+.icon-search { content: "L"; }
 
-.icon-chat {
-  content: "c"; }
+.icon-chat { content: "c"; }
 
-.icon-speach {
-  content: "d"; }
+.icon-speach { content: "d"; }
 
-.icon-speach-alt {
-  content: "d"; }
+.icon-speach-alt { content: "d"; }
 
-.icon-repost {
-  content: "J"; }
+.icon-repost { content: "J"; }
 
-.icon-facbook {
-  content: "f"; }
+.icon-facbook { content: "f"; }
 
-.icon-googleplus {
-  content: "g"; }
+.icon-googleplus { content: "g"; }
 
-.icon-linkedin {
-  content: "l"; }
+.icon-linkedin { content: "l"; }
 
-.icon-rss {
-  content: "r"; }
+.icon-rss { content: "r"; }
 
-.icon-skype {
-  content: "s"; }
+.icon-skype { content: "s"; }
 
-.icon-tumblr {
-  content: "k"; }
+.icon-tumblr { content: "k"; }
 
-.icon-twitter {
-  content: "t"; }
+.icon-twitter { content: "t"; }
 
-.icon-vimeo {
-  content: "m"; }
+.icon-vimeo { content: "m"; }
 
-.icon-youtube {
-  content: "y"; }
+.icon-youtube { content: "y"; }
 
-em, i {
-  font-style: normal; }
+em, i { font-style: normal; }
 
-body {
-  background: #f6f6f6; }
+body { background: #f6f6f6; }
 
-.page {
-  width: 900px;
-  margin: 0 auto;
-  background: #eee;
-  padding: 10px; }
+.page { width: 900px; margin: 0 auto; background: #eee; padding: 10px; }
 
-h1 {
-  font-family: 'Ultra', serif;
-  font-size: 3em; }
+h1 { color: #e3e2e2; font: 3em 'Ultra', serif; text-shadow: 0px 0px 2px #999999; filter: dropshadow(color=#999999, offx=0, offy=0); text-transform: uppercase; }
 
-header div:before {
-  color: red;
-  font-size: 1em; }
+header div:before { color: red; font-size: 1em; }
 
-header h1 b:after {
-  color: pink; }
+header h1 b:after { color: pink; }
 
-div[role="main"] {
-  border: 1px solid gray; }
+div[role="main"] { border: 1px solid gray; }
+
+header h1 b:after { font-size: 2em; padding: 0 1em; color: lightblue; }
