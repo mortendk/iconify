@@ -1,0 +1,79 @@
+@font-face { font-family: 'WebSymbolsRegular'; src: url("../fonts/websymbols/websymbols-regular-webfont.eot"); src: url("../fonts/websymbols/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/websymbols/websymbols-regular-webfont.woff") format("woff"), url("../fonts/websymbols/websymbols-regular-webfont.ttf") format("truetype"), url("../fonts/websymbols/websymbols-regular-webfont.svg#WebSymbolsRegular") format("svg"); font-weight: normal; font-style: normal; }
+
+.icon, .icon-config, .block-configure a:before, a[href$="edit"]:before, .icon-image, .icon-movie, .icon-html, .icon-attachment, .icon-folder, .icon-user, .icon-logout, .icon-lock, .icon-lock-open, .icon-up, .icon-prev, .icon-next, .icon-prev-alt, .icon-next-alt, .icon-move, .breadcrumb:before, .icon-close, .icon-close-alt, .icon-scale, .icon-reload, .icon-sync, .icon-alert, .icon-ok, .icon-ok-alt, .icon-no, .icon-text, .icon-terminal, .icon-view-portrait, .icon-view-album, .icon-cloud, .tabs li:first-child a:before, a[href$="delete"]:before, a[href$="outline"]:before, a[href$="devel"]:before, a[href^="/comment/reply"]:before, a[href^="/node/add"]:before { font-family: WebSymbolsRegular; font-size: 16px; margin-right: 10px; vertical-align: middle; }
+
+.icon-config, .block-configure a:before, a[href$="edit"]:before { content: "S"; }
+
+.icon-image { content: "I"; }
+
+.icon-movie { content: "M"; }
+
+.icon-html { content: "H"; }
+
+.icon-attachment { content: "A"; }
+
+.icon-folder { content: "F"; }
+
+.icon-user { content: "U"; }
+
+.icon-logout { content: "X"; }
+
+.icon-lock { content: "x"; }
+
+.icon-lock-open { content: "w"; }
+
+.icon-up { content: ":"; }
+
+.icon-up { content: ";"; }
+
+.icon-prev { content: "("; }
+
+.icon-next { content: "("; }
+
+.icon-prev-alt { content: "<"; }
+
+.icon-next-alt { content: ">"; }
+
+.icon-move, .breadcrumb:before { content: "~"; }
+
+.icon-close { content: "×"; }
+
+.icon-close-alt { content: "'"; }
+
+.icon-scale { content: "&"; }
+
+.icon-reload { content: "*"; }
+
+.icon-sync { content: "V"; }
+
+.icon-alert { content: "W"; }
+
+.icon-ok { content: "/"; }
+
+.icon-ok-alt { content: "."; }
+
+.icon-no { content: "."; }
+
+.icon-text { content: "T"; }
+
+.icon-terminal { content: "_"; }
+
+.icon-view-portrait { content: "a"; }
+
+.icon-view-album { content: "a"; }
+
+.icon-cloud { content: "C"; }
+
+/*tabs */
+.tabs li:first-child a:before { content: "a"; }
+
+a[href$="delete"]:before { content: "'"; }
+
+a[href$="outline"]:before { content: "³"; }
+
+a[href$="devel"]:before { content: "_"; }
+
+a[href^="/comment/reply"]:before { content: "c"; }
+
+/* actions */
+a[href^="/node/add"]:before { content: "c"; }

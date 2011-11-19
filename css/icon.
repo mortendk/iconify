@@ -1,0 +1,121 @@
+@font-face {
+  font-family: 'WebSymbolsRegular';
+  src: url('../fonts/websymbols/websymbols-regular-webfont.eot');
+  src: url('../fonts/websymbols/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/websymbols/websymbols-regular-webfont.woff') format('woff'),
+  url('../fonts/websymbols/websymbols-regular-webfont.ttf') format('truetype'),
+  url('../fonts/websymbols/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon {
+  font-family: WebSymbolsRegular;
+  font-size: 16px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+//assets
+.icon-view-portrait { content: "a"; @extend .icon;}
+.icon-view-album    { content: "a"; @extend .icon;}
+.icon-image         { content: "I"; @extend .icon;}
+.icon-movie         { content: "M"; @extend .icon;}
+.icon-html          { content: "H"; @extend .icon;}
+.icon-attachment    { content: "A"; @extend .icon;}
+.icon-folder        { content: "F"; @extend .icon;}
+.icon-cloud         { content: "C"; @extend .icon;}
+.icon-mail          { content: "@"; @extend .icon;}
+.icon-terminal      { content: "_"; @extend .icon;}
+
+//user
+.icon-user          { content: "U"; @extend .icon;}
+.icon-logout        { content: "X"; @extend .icon;}
+.icon-lock          { content: "x"; @extend .icon;}
+.icon-lock-open     { content: "w"; @extend .icon;}
+
+//navigation
+.icon-up            { content: ":"; @extend .icon;}
+.icon-up            { content: ";"; @extend .icon;}
+.icon-prev          { content: "("; @extend .icon;}
+.icon-next          { content: "("; @extend .icon;}
+.icon-prev-alt      { content: "<"; @extend .icon;}
+.icon-next-alt      { content: ">"; @extend .icon;}
+.icon-first         { content: " "; @extend .icon;}
+.icon-last          { content: " "; @extend .icon;}
+.icon-move          { content: "~"; @extend .icon;}
+.icon-close         { content: "×"; @extend .icon;}
+.icon-scale         { content: "&"; @extend .icon;}
+.icon-reload        { content: "*"; @extend .icon;}
+.icon-sync          { content: "V"; @extend .icon;}
+.icon-sort-up       { content: "{"; @extend .icon;}
+.icon-sort-down     { content: "}"; @extend .icon;}
+.icon-fold          { content: "["; @extend .icon;}
+.icon-fold-closed   { content: "]"; @extend .icon;}
+
+//action
+.icon-config        { content: "S"; @extend .icon;}
+
+//messages
+.icon-alert         { content: "W"; @extend .icon;}
+.icon-ok            { content: "/"; @extend .icon;}
+.icon-ok-alt        { content: "."; @extend .icon;}
+.icon-no            { content: "."; @extend .icon;}
+.icon-delete        { content: "'"; @extend .icon;}
+
+//wysiwyg
+.icon-text          { content: "T"; @extend .icon;}
+.icon-indent        { content: "n"; @extend .icon;}
+.icon-outdent       { content: "o"; @extend .icon;}
+
+//lists
+.icon-list          { content: "²"; @extend .icon;}
+.icon-list-bullets  { content: "p"; @extend .icon;}
+.icon-list-numbers  { content: "q"; @extend .icon;}
+.icon-list-images   { content: "³"; @extend .icon;}
+
+//lists
+.icon-star          { content: "R"; @extend .icon;}
+.icon-heart         { content: "N"; @extend .icon;}
+.icon-heart-alt     { content: "O"; @extend .icon;}
+.icon-tag           { content: ","; @extend .icon;}
+
+.icon-link          { content: "K"; @extend .icon;}
+.icon-date          { content: "P"; @extend .icon;}
+.icon-mappin        { content: "?"; @extend .icon;}
+.icon-search        { content: "L"; @extend .icon;}
+
+//comments
+.icon-chat          { content: "c"; @extend .icon;}
+.icon-speach        { content: "d"; @extend .icon;}
+.icon-speach-alt    { content: "d"; @extend .icon;}
+.icon-repost        { content: "J"; @extend .icon;}
+
+//social sites
+.icon-facbook       { content: "f"; @extend .icon;}
+.icon-googleplus    { content: "g"; @extend .icon;}
+.icon-linkedin      { content: "l"; @extend .icon;}
+.icon-rss           { content: "r"; @extend .icon;}
+.icon-skype         { content: "s"; @extend .icon;}
+.icon-tumblr        { content: "k"; @extend .icon;}
+.icon-twitter       { content: "t"; @extend .icon;}
+.icon-vimeo         { content: "m"; @extend .icon;}
+.icon-youtube       { content: "y"; @extend .icon;}
+
+
+
+
+//------ Drupal stuff
+.breadcrumb:before { @extend .icon-move;}
+.block-configure a:before{ @extend .icon-config;}
+/*tabs */
+.tabs li:first-child a:before {  @extend .icon-view-portrait; }
+a[href$="edit"]:before{ @extend .icon-config;}
+a[href$="delete"]:before{ @extend .icon-delete;}
+a[href$="outline"]:before{ @extend .icon-list-images;}
+a[href$="devel"]:before{ @extend .icon-terminal; }
+a[href^="/comment/reply"]:before{ content: "c"; @extend .icon;}
+/* actions */
+a[href^="/node/add"]:before{ content: "c"; @extend .icon;}
+
+
