@@ -1,48 +1,92 @@
 //import the iconset
-@import "fonticon-websymbols.scss";
+@import "iconfont-websymbols.scss";
 
 
 //dirty resets
-em, i {font-style: normal; }
+em, i, strong, b {font-style: normal; }
 
 body {
-  background: #f6f6f6; }
+  background: #f6f6f6;
+  font-family:sans-serif;
+  }
 
 .page {
-  width: 900px;
+  width: 800px;
   margin: 0 auto;
   background: #eee;
-  padding: 10px; }
+  padding: 50px;
+  border-radius:10px;
+  border:2px dotted #ddd;
+}
 
 h1 {
   color: #e3e2e2;
-  font: 3em 'Ultra', serif;
-  text-shadow: 0px 0px 2px #999999;
-  filter: dropshadow(color=#999999, offx=0, offy=0);
-
+  font: 4em 'Ultra', serif;
+  text-shadow: 1px -1px 1px #999999;
   text-transform: uppercase;
+  vertical-align: top;
 }
 
-
-header div:before {
-  color: red;
-  font-size: 1em; }
-
-header h1 b:after {
-  color: pink; 
-  }
-
-div[role="main"] {
-  border: 1px solid gray; 
-}
-
-header h1 b:after {
+h1:before {
   @extend .icon-cloud;
-  font-size:2em;
-  padding:0 1em;
-  color:lightblue;
+  font-size:1em;
+  margin:-1em 1em 0em 0em;
+  color:rgba(255,255,255,.9);
+  text-shadow: 0px 0px 5px lightblue;
 }
+
+h2 {
+  color: #ccc;
+  font: 3em 'Ultra', serif;
+  text-shadow: 1px -1px 1px #999999;
+  text-transform: uppercase;
+  vertical-align: top;
+}
+
+
+h2:after {
+  @extend .icon-heart;
+  font-size:1.6em;
+  color:pink;
+}
+h2 b:after {
+  @extend .icon-config;
+  font-size:.8em;
+  padding:0.5em;
+}
+h2 em:after {
+  @extend .icon-next-alt;
+  font-size:1em;
+  padding:0.5em;
+}
+
+
 
 div[role="main"]{
+
+}
+
+code, pre {
+  padding: 0 3px 2px;
+  font-family: Monaco, Andale Mono, Courier New, monospace;
+  font-size: 12px;
+}
+code {
+  background-color: lighten(#f89406, 40%);
+  color: rgba(0,0,0,.75);
+  padding: 1px 3px;
+}
+pre {
+  background-color: lighten(#f89406, 40%);
+  display: block;
+  padding: (20px - 1) / 2;
+  margin: 0 0 20px;
+  line-height: 20px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0,0,0,.15);
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 
 }

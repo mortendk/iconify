@@ -16,15 +16,50 @@
     <p>
 
     </p>
-    <h3>SASS code</h3>
+
+    <h3>Icons</h3>
+    <p>
+      all the icons are defined in the iconfont-[NAME].scss
+    </p>
     <code>
-        
+      <pre>
+      .icon-cloud {
+        content: "C"; //keyboard combination
+        @extend .icon; //use the basic icon setting
+      }
+      </pre>
     </code>
 
+    <h3>USe the icon </h3>
+    <p>
+      To add the icon into the css use :before or :after and all the magick will happen
+    </p>
+    <code>
+      <pre>
+      h1:before {
+        @extend .icon-cloud; //use the defined class with the icon font in
+        font-size:1em;
+        margin:-1em 1em 0em 0em;
+        color:rgba(255,255,255,.9);
+        text-shadow: 0px 0px 5px lightblue;
+      }
+      </pre>
+    </code>
+    <p>
+    will ad the icon before the h1 tag
+    sass is awesome
+    </p>
   </div>
 
+
+    <h2>
+      <b>icon</b><em>font</em>
+    </h2>
+
+
+
   <footer>
-    the almighty footer
+
   </footer>
 </div>
 

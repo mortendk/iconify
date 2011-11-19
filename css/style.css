@@ -1,6 +1,6 @@
 @font-face { font-family: 'WebSymbolsRegular'; src: url("../fonts/websymbols/websymbols-regular-webfont.eot"); src: url("../fonts/websymbols/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/websymbols/websymbols-regular-webfont.woff") format("woff"), url("../fonts/websymbols/websymbols-regular-webfont.ttf") format("truetype"), url("../fonts/websymbols/websymbols-regular-webfont.svg#WebSymbolsRegular") format("svg"); font-weight: normal; font-style: normal; }
 
-.icon, .icon-view-portrait, .icon-view-album, .icon-image, .icon-movie, .icon-html, .icon-attachment, .icon-folder, .icon-cloud, header h1 b:after, .icon-mail, .icon-terminal, .icon-user, .icon-logout, .icon-lock, .icon-lock-open, .icon-up, .icon-prev, .icon-next, .icon-prev-alt, .icon-next-alt, .icon-first, .icon-last, .icon-move, .icon-close, .icon-scale, .icon-reload, .icon-sync, .icon-sort-up, .icon-sort-down, .icon-fold, .icon-fold-closed, .icon-config, .icon-alert, .icon-ok, .icon-ok-alt, .icon-no, .icon-delete, .icon-text, .icon-indent, .icon-outdent, .icon-list, .icon-list-bullets, .icon-list-numbers, .icon-list-images, .icon-star, .icon-heart, .icon-heart-alt, .icon-tag, .icon-link, .icon-date, .icon-mappin, .icon-search, .icon-chat, .icon-speach, .icon-speach-alt, .icon-repost, .icon-facbook, .icon-googleplus, .icon-linkedin, .icon-rss, .icon-skype, .icon-tumblr, .icon-twitter, .icon-vimeo, .icon-youtube { font-family: WebSymbolsRegular; font-size: 16px; margin-right: 10px; vertical-align: middle; }
+.icon, .icon-view-portrait, .icon-view-album, .icon-image, .icon-movie, .icon-html, .icon-attachment, .icon-folder, .icon-cloud, h1:before, .icon-mail, .icon-terminal, .icon-user, .icon-logout, .icon-lock, .icon-lock-open, .icon-up, .icon-prev, .icon-next, .icon-prev-alt, .icon-next-alt, h2 em:after, .icon-first, .icon-last, .icon-move, .icon-close, .icon-scale, .icon-reload, .icon-sync, .icon-sort-up, .icon-sort-down, .icon-fold, .icon-fold-closed, .icon-config, h2 b:after, .icon-alert, .icon-ok, .icon-ok-alt, .icon-no, .icon-delete, .icon-text, .icon-indent, .icon-outdent, .icon-list, .icon-list-bullets, .icon-list-numbers, .icon-list-images, .icon-star, .icon-heart, h2:after, .icon-heart-alt, .icon-tag, .icon-link, .icon-date, .icon-mappin, .icon-search, .icon-chat, .icon-speach, .icon-speach-alt, .icon-repost, .icon-facbook, .icon-googleplus, .icon-linkedin, .icon-rss, .icon-skype, .icon-tumblr, .icon-twitter, .icon-vimeo, .icon-youtube { font-family: WebSymbolsRegular; font-size: 16px; margin-right: 10px; vertical-align: middle; }
 
 .icon-view-portrait { content: "a"; }
 
@@ -16,7 +16,7 @@
 
 .icon-folder { content: "F"; }
 
-.icon-cloud, header h1 b:after { content: "C"; }
+.icon-cloud, h1:before { content: "C"; }
 
 .icon-mail { content: "@"; }
 
@@ -40,7 +40,7 @@
 
 .icon-prev-alt { content: "<"; }
 
-.icon-next-alt { content: ">"; }
+.icon-next-alt, h2 em:after { content: ">"; }
 
 .icon-first { content: " "; }
 
@@ -64,7 +64,7 @@
 
 .icon-fold-closed { content: "]"; }
 
-.icon-config { content: "S"; }
+.icon-config, h2 b:after { content: "S"; }
 
 .icon-alert { content: "W"; }
 
@@ -92,7 +92,7 @@
 
 .icon-star { content: "R"; }
 
-.icon-heart { content: "N"; }
+.icon-heart, h2:after { content: "N"; }
 
 .icon-heart-alt { content: "O"; }
 
@@ -132,18 +132,26 @@
 
 .icon-youtube { content: "y"; }
 
-em, i { font-style: normal; }
+em, i, strong, b { font-style: normal; }
 
-body { background: #f6f6f6; }
+body { background: #f6f6f6; font-family: sans-serif; }
 
-.page { width: 900px; margin: 0 auto; background: #eee; padding: 10px; }
+.page { width: 800px; margin: 0 auto; background: #eee; padding: 50px; border-radius: 10px; border: 2px dotted #ddd; }
 
-h1 { color: #e3e2e2; font: 3em 'Ultra', serif; text-shadow: 0px 0px 2px #999999; filter: dropshadow(color=#999999, offx=0, offy=0); text-transform: uppercase; }
+h1 { color: #e3e2e2; font: 4em 'Ultra', serif; text-shadow: 1px -1px 1px #999999; text-transform: uppercase; vertical-align: top; }
 
-header div:before { color: red; font-size: 1em; }
+h1:before { font-size: 1em; margin: -1em 1em 0em 0em; color: rgba(255, 255, 255, 0.9); text-shadow: 0px 0px 5px lightblue; }
 
-header h1 b:after { color: pink; }
+h2 { color: #ccc; font: 3em 'Ultra', serif; text-shadow: 1px -1px 1px #999999; text-transform: uppercase; vertical-align: top; }
 
-div[role="main"] { border: 1px solid gray; }
+h2:after { font-size: 1.6em; color: pink; }
 
-header h1 b:after { font-size: 2em; padding: 0 1em; color: lightblue; }
+h2 b:after { font-size: .8em; padding: 0.5em; }
+
+h2 em:after { font-size: 1em; padding: 0.5em; }
+
+code, pre { padding: 0 3px 2px; font-family: Monaco, Andale Mono, Courier New, monospace; font-size: 12px; }
+
+code { background-color: #fee9cc; color: rgba(0, 0, 0, 0.75); padding: 1px 3px; }
+
+pre { background-color: #fee9cc; display: block; padding: 9.5px; margin: 0 0 20px; line-height: 20px; font-size: 12px; border: 1px solid #ccc; border: 1px solid rgba(0, 0, 0, 0.15); white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
