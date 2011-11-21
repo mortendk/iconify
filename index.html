@@ -2,67 +2,348 @@
 <html>
 <head>
   <meta charset='utf-8'>
-  <title>mortendk/icon-font-css @ GitHub</title>
+  <title>Iconify CSS </title>
+  <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Ultra' rel='stylesheet' type='text/css'>
   <style type="text/css">
-		@import url(css/style.css);
-    .download { float: right; }
-  </style>
-	<link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
-</head>
-<body>
-<a href="https://github.com/mortendk/icon-font-css"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+    @import url(prettify/prettify.css);
+    @import url(css/iconify-websymbols.css);
+    body{
+      padding-top:2em;
+      background: #f6f6f6;
+    }
+    .label-sass {
+      padding: 1px 3px 2px;
+      font-size: 9.75px;
+      font-weight: bold;
+      color: white;
+      text-transform: uppercase;
+      white-space: nowrap;
+      background-color: #FAA8FF;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+    }
 
+    h1 { color: #e3e2e2; font: 4em 'Ultra', serif; text-shadow: 1px -1px 1px #999999; text-transform: uppercase; vertical-align: top; }
+
+    h1:before {
+      font-size: 1.5em;
+      margin: -1em 1em 0em 0em;
+      color: rgba(255, 255, 255, 0.9);
+      text-shadow: 0px 0px 5px lightblue;
+    }
+
+    .download{
+      float:right;
+    }
+  </style>
+
+  <script type="text/javascript" src="prettify/prettify.js"></script>
+</head>
+<body onload="prettyPrint()">
+<a href="https://github.com/mortendk/icon-font-css"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
 <div class="container">
+
 <div class="row">
   <div class="span16">
 
-    <h1><a href="https://github.com/mortendk/icon-font-css">icon-font-css</a>
-     <span class="small">by <a href="https://github.com/mortendk">mortendk</a></span></h1>
+    <h1>Iconify CSS</h1>
+      <blockquote>
+        <p>
+          SASS files that makes it super duper easy to add fonts based icons in SASS - No reason to remember    the key anymore
+        </p>
+      </blockquote>
 
-    <div class="row">
-      <div class="span8">
-			<h2>Download Icon @font-face</h2>
-			
-			<h3>OFL license:</h3>
-			<a class="btn" href="http://www.justbenicestudio.com/studio/websymbols">Websymbols</a><br>
-			<h3>Commercial:</h3>
-			<a class="btn" href="http://pictos.drewwilson.com">Pictos</a> <br>
-			<a class="btn" href="http://tipogram.com Commercial">Tipogram</a><br>
-			<a class="btn" href="http://fico.lensco.be">Fico</a><br>
-
-
+      <div class="download">
+        <a href="https://github.com/mortendk/icon-font-css/zipball/master"><img border="0" width="90" src="https://github.com/images/modules/download/zip.png"></a>
+        <a href="https://github.com/mortendk/icon-font-css/tarball/master"><img border="0" width="90" src="https://github.com/images/modules/download/tar.png"></a>
+        <h2>Download font icons</h2>
+        <p>
+          You can download this project in either
+          <a href="https://github.com/mortendk/icon-font-css/zipball/master">zip</a> or <a href="https://github.com/mortendk/icon-font-css/tarball/master">tar formats.</a>
+        </p>
+        yadi yadi follow me on twitter ...
+        <a class="btn twitter" href="http://twitter.com/mortendk">twitter</a>
 
       </div>
-      <div class="span8">
-
-				<h2>Download</h2>
-			
-			    <div class="download">
-					<a href="https://github.com/mortendk/icon-font-css/zipball/master"><img border="0" width="90" src="https://github.com/images/modules/download/zip.png"></a>
-					<a href="https://github.com/mortendk/icon-font-css/tarball/master"><img border="0" width="90" src="https://github.com/images/modules/download/tar.png"></a>
-			    </div>
 
 
-		    <p>
-    	  You can download this project in either
-      	<a href="https://github.com/mortendk/icon-font-css/zipball/master">zip</a> or
-      	<a href="https://github.com/mortendk/icon-font-css/tarball/master">tar formats.
-    		</p>
-		    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
-					by running:
-			      <pre>$ git clone git://github.com/mortendk/icon-font-css</pre>
-		    </p>
-				<p>
-		  	get the source code on GitHub : <a class="btn info" href="https://github.com/mortendk/icon-font-css">mortendk/icon-font-css</a>
-				</p>
+
+    <h2 class="use">Usage</h2>
+    <p>
+    The concept is pretty straight forward: </br>
+    The <span class="label-sass">iconify-[fontname].scss</span> file contains a bunch of classes thats each are a single icon from the font set.
+    </p>
+    <p>
+    To include a icon to a class use a <code>@extend icon-[name of icon];</code> to the class in the sass file<br>
+    Now theres no reason to remember that its the "N" key thats deifne the heart icon :)
+    </p>
+
+    <h3>the SASSy way</h3>
+    <p>
+      Take the <span class="label">iconify-[fontname].scss</span> and drop it into you /sass/ folder<br>
+      include it as you would with all other .scss files<br>
+      Add <code>@include "iconify-[fontname].scss"</code> to you sass file
+    </p>
+    <p>
+    use the <code>@extend .icon-[iconname]</code> to easy add the icon.<br>
+    Place it with <code>[class]:before</code> or <code>[class]:after</code> simpel n easy.
+  </p>
+
+
+  <span class="label-sass">style.scss</span><br>
+    <pre class="prettyprint linenums">
+
+    @import "iconify-websymbols.scss"; //import the iconset iconify-[fontfacename].scss
+
+    h1:before {
+      @extend .icon-cloud; //add the .icon-cloud{} to h1
+      font-size:1em;
+      margin:-1em 1em 0em 0em;
+      color:rgba(255,255,255,.9);
+      text-shadow: 0px 0px 5px lightblue;
+    }
+
+    h2:after {
+      @extend .icon-heart; //add this definition to the .icon-heart{} will be added after the h2
+      font-size:1.6em;
+      color:pink;
+    }
+
+  </pre>
+
+    <span class="label-sass">iconify-websymbols.scss</span>
+    <pre class="prettyprint linenums">
+    // Define the font
+    // WebSymbolsRegular  http://www.justbenicestudio.com/studio/websymbols/
+    @font-face {
+      font-family: 'WebSymbolsRegular';
+      src: url('../fonts/websymbols/websymbols-regular-webfont.eot');
+      src: url('../fonts/websymbols/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/websymbols/websymbols-regular-webfont.woff') format('woff'),
+      url('../fonts/websymbols/websymbols-regular-webfont.ttf') format('truetype'),
+      url('../fonts/websymbols/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    //sets up the base icon
+    .icon {
+      font-family: WebSymbolsRegular;
+      font-size: 16px;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+
+    //define all the icons & extends the .icon class to safe us some kb.
+    .icon-view-portrait { content: "a"; @extend .icon;}
+    .icon-view-album    { content: "a"; @extend .icon;}
+  </pre>
+
+
+  <h3>the generated css file iconify-[fontname].css</h3>
+  <span class="label">iconify-websymbols.css</span>
+    <pre class="prettyprint linenums">
+  //lets get the font icon type
+  @font-face {
+    font-family: 'WebSymbolsRegular';
+    src: url("../fonts/websymbols/websymbols-regular-webfont.eot");
+    src: url("../fonts/websymbols/websymbols-regular-webfont.eot?#iefix")
+    format("embedded-opentype"), url("../fonts/websymbols/websymbols-regular-webfont.woff") format("woff"),
+    url("../fonts/websymbols/websymbols-regular-webfont.ttf") format("truetype"),
+    url("../fonts/websymbols/websymbols-regular-webfont.svg#WebSymbolsRegular") format("svg");
+    font-weight: normal; font-style: normal;
+  }
+
+  //a ton of classes generated
+  .icon, .icon-heart ..... .icon, .icon-view-portrait, .icon-view-album .....{
+    font-family: WebSymbolsRegular;
+    font-size: 16px; margin-right: 10px;
+    vertical-align: middle;
+  }
+
+  //naming the icons to something we can actually remember & use
+  .icon-star { content: "R"; }
+  .icon-heart { content: "N"; }
+  .icon-heart-alt { content: "O"; }
+  </pre>
+
+    <p>
+    If you wanna use another icon library then you just @import another iconify-[typename].scss file
+    </p>
+
+
+    <h3>Icon definition</h3>
+    <p>
+      Every icon is defined with .icon-[name]
+    </p>
+    <pre class="prettyprint linenums">
+    .icon-cloud {
+      content: "C"; //the icon
+      @extend .icon; //use the basic icon style
+    }
+    </pre>
+
+<!-- names & template-->
+    <div class="row">
+      <div class="span6">
+        <h2>Icon names</h2>
+             <table class="zebra-striped">
+                <thead>
+                  <tr>
+                    <th>Icon name</th>
+                    <th>Last Name</th>
+                    <th>Language</th>
+                  </tr>
+                </thead>
+                <tr>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                </tr>
+              </table>
+      </div>
+      <div class="span10">
+        <h2>Template</h2>
+
+        <textarea class="xxlarge" rows="30" cols="40">
+          //assets
+          .icon-view-portrait { content: "a"; @extend .icon;}
+          .icon-view-album    { content: "a"; @extend .icon;}
+          .icon-image         { content: "I"; @extend .icon;}
+          .icon-movie         { content: "M"; @extend .icon;}
+          .icon-html          { content: "H"; @extend .icon;}
+          .icon-attachment    { content: "A"; @extend .icon;}
+          .icon-folder        { content: "F"; @extend .icon;}
+          .icon-cloud         { content: "C"; @extend .icon;}
+          .icon-mail          { content: "@"; @extend .icon;}
+          .icon-terminal      { content: "_"; @extend .icon;}
+
+          //user
+          .icon-user          { content: "U"; @extend .icon;}
+          .icon-logout        { content: "X"; @extend .icon;}
+          .icon-lock          { content: "x"; @extend .icon;}
+          .icon-lock-open     { content: "w"; @extend .icon;}
+
+          //navigation
+          .icon-up            { content: ":"; @extend .icon;}
+          .icon-up            { content: ";"; @extend .icon;}
+          .icon-prev          { content: "("; @extend .icon;}
+          .icon-next          { content: "("; @extend .icon;}
+          .icon-prev-alt      { content: "<"; @extend .icon;}
+          .icon-next-alt      { content: ">"; @extend .icon;}
+          .icon-first         { content: " "; @extend .icon;}
+          .icon-last          { content: " "; @extend .icon;}
+          .icon-move          { content: "~"; @extend .icon;}
+          .icon-close         { content: "×"; @extend .icon;}
+          .icon-scale         { content: "&"; @extend .icon;}
+          .icon-reload        { content: "*"; @extend .icon;}
+          .icon-sync          { content: "V"; @extend .icon;}
+          .icon-sort-up       { content: "{"; @extend .icon;}
+          .icon-sort-down     { content: "}"; @extend .icon;}
+          .icon-fold          { content: "["; @extend .icon;}
+          .icon-fold-closed   { content: "]"; @extend .icon;}
+
+          //action
+          .icon-config        { content: "S"; @extend .icon;}
+
+          //messages
+          .icon-alert         { content: "W"; @extend .icon;}
+          .icon-ok            { content: "/"; @extend .icon;}
+          .icon-ok-alt        { content: "."; @extend .icon;}
+          .icon-no            { content: "."; @extend .icon;}
+          .icon-delete        { content: "'"; @extend .icon;}
+
+          //wysiwyg
+          .icon-text          { content: "T"; @extend .icon;}
+          .icon-indent        { content: "n"; @extend .icon;}
+          .icon-outdent       { content: "o"; @extend .icon;}
+
+          //lists
+          .icon-list          { content: "²"; @extend .icon;}
+          .icon-list-bullets  { content: "p"; @extend .icon;}
+          .icon-list-numbers  { content: "q"; @extend .icon;}
+          .icon-list-images   { content: "³"; @extend .icon;}
+
+          //lists
+          .icon-star          { content: "R"; @extend .icon;}
+          .icon-heart         { content: "N"; @extend .icon;}
+          .icon-heart-alt     { content: "O"; @extend .icon;}
+          .icon-tag           { content: ","; @extend .icon;}
+
+          .icon-link          { content: "K"; @extend .icon;}
+          .icon-date          { content: "P"; @extend .icon;}
+          .icon-mappin        { content: "?"; @extend .icon;}
+          .icon-search        { content: "L"; @extend .icon;}
+
+          //comments
+          .icon-chat          { content: "c"; @extend .icon;}
+          .icon-speach        { content: "d"; @extend .icon;}
+          .icon-speach-alt    { content: "d"; @extend .icon;}
+          .icon-repost        { content: "J"; @extend .icon;}
+
+          //social sites
+          .icon-facbook       { content: "f"; @extend .icon;}
+          .icon-googleplus    { content: "g"; @extend .icon;}
+          .icon-linkedin      { content: "l"; @extend .icon;}
+          .icon-rss           { content: "r"; @extend .icon;}
+          .icon-skype         { content: "s"; @extend .icon;}
+          .icon-tumblr        { content: "k"; @extend .icon;}
+          .icon-twitter       { content: "t"; @extend .icon;}
+          .icon-vimeo         { content: "m"; @extend .icon;}
+          .icon-youtube       { content: "y"; @extend .icon;}
+
+
+        </textarea>
 
       </div>
     </div>
-  </div>
-</div>
-</div>
+
+<!-- /names & template-->
+
+    <div class="row">
+      <div class="span8">
+      <h3>where do the icons come from</h3>
+      <p>
+        You do know that time when Daddy got fontfaced and met mother icon at the bar? ...
+      </p>
+      <p>
+        use @fontface for getting the icons - its just a font like good old dingbats.
+      </p>
+
+      <h2>Download icons</h2>
+      The plan is to support as many icon sets as possible - these are on the list:
+      <h3>OFL license:</h3>
+      <a href="http://www.justbenicestudio.com/studio/websymbols">Websymbols</a><br>
+      <h3>Commercial:</h3>
+      <a href="http://pictos.drewwilson.com">Pictos</a> <br>
+      <a href="http://tipogram.com Commercial">Tipogram</a><br>
+      <a href="http://fico.lensco.be">Fico</a><br>
+    </div>
+    <div class="span8">
+      <p>
+        You can also clone the project with <a href="http://git-scm.com">Git</a>
+        by running: <pre>$ git clone git://github.com/mortendk/icon-font-css</pre>
+      </p>
+      <p>
+        get the source code on GitHub : <a class="btn info" href="https://github.com/mortendk/icon-font-css">mortendk/icon-font-css</a>
+      </p>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="span4">
+      </div>
+    </div>
+
+  </div> <!--/span16 -->
+</div> <!--/row -->
+
+</div><!--/container -->
 
 
-    
+
 </body>
 </html>
