@@ -1,0 +1,132 @@
+/*
+    --------------------------------------------------------------
+    Iconify 0.2
+    Quick n easy icons from font files to you markup
+    http://mortendk.github.com/iconify
+    --------------------------* * *------------------------------------
+                                      ___
+     __                         __  /'___\
+    /\_\    ___    ___     ___ /\_\/\ \__/  __  __
+    \/\ \  /'___\ / __`\ /' _ `\/\ \ \ ,__\/\ \/\ \
+     \ \ \/\ \__//\ \L\ \/\ \/\ \ \ \ \ \_/\ \ \_\ \
+      \ \_\ \____\ \____/\ \_\ \_\ \_\ \_\  \/`____ \
+       \/_/\/____/\/___/  \/_/\/_/\/_/\/_/   `/___/> \
+                                                /\___/
+                                                \/__/
+    ---------------------------* * *-----------------------------------
+*/
+
+// the font "websymbols" can be downloaded here:
+// http://www.justbenicestudio.com/studio/websymbols/
+
+@font-face {
+  font-family: 'WebSymbolsRegular';
+  src: url('../fonts/websymbols/websymbols-regular-webfont.eot');
+  src: url('../fonts/websymbols/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/websymbols/websymbols-regular-webfont.woff') format('woff'),
+  url('../fonts/websymbols/websymbols-regular-webfont.ttf') format('truetype'),
+  url('../fonts/websymbols/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+//sets up the base icon
+.iconify{
+  font-family: WebSymbolsRegular; //
+  font-size: 1em;
+  vertical-align: top;
+}
+
+@mixin icon($icon:twitter,$place:before){
+  @if $icon     == ""         { content: "t";}
+
+/* user */
+  @elseif $icon == "user"          { content: "U";}
+  @elseif $icon == "logout"        { content: "X";}
+  @elseif $icon == "lock"          { content: "x";}
+  @elseif $icon == "lock-open"     { content: "w";}
+
+/* navigation */
+  @elseif $icon == "up"            { content: ":";}
+  @elseif $icon == "up2"        { content: ";";}
+  @elseif $icon == "prev"          { content: "(";}
+  @elseif $icon == "prev2"         { content: "<";}
+  @elseif $icon == "next"          { content: ")";}
+  @elseif $icon == "next2"         { content: ">";}
+  @elseif $icon == "first"         { content: " ";}
+  @elseif $icon == "last"          { content: " ";}
+  @elseif $icon == "move"          { content: "~";}
+  @elseif $icon == "close"         { content: "×";}
+  @elseif $icon == "scale"         { content: "&";}
+  @elseif $icon == "reload"        { content: "*";}
+  @elseif $icon == "sync"          { content: "V";}
+  @elseif $icon == "sort-up"       { content: "{";}
+  @elseif $icon == "sort-down"     { content: "}";}
+  @elseif $icon == "fold"          { content: "[";}
+  @elseif $icon == "fold-closed"   { content: "]";}
+
+/* assets */
+  @elseif $icon == "view-portrait" { content: "a";}
+  @elseif $icon == "view-album"    { content: "a";}
+  @elseif $icon == "image"         { content: "I";}
+  @elseif $icon == "movie"         { content: "M";}
+  @elseif $icon == "html"          { content: "H";}
+  @elseif $icon == "attachment"    { content: "A";}
+  @elseif $icon == "folder"        { content: "F";}
+  @elseif $icon == "cloud"         { content: "C";}
+  @elseif $icon == "mail"          { content: "@";}
+  @elseif $icon == "terminal"      { content: "_";}
+
+/* action */
+  @elseif $icon == "config"        { content: "S";}
+
+/* messages */
+  @elseif $icon == "alert"         { content: "W";}
+  @elseif $icon == "ok"            { content: "/";}
+  @elseif $icon == "ok2"        { content: ".";}
+  @elseif $icon == "no"            { content: ".";}
+  @elseif $icon == "delete"        { content: "'";}
+
+/* wysiwyg editor */
+  @elseif $icon == "text"          { content: "T";}
+  @elseif $icon == "indent"        { content: "n";}
+  @elseif $icon == "outdent"       { content: "o";}
+
+/* lists */
+  @elseif $icon == "list"          { content: "²";}
+  @elseif $icon == "list-bullets"  { content: "p";}
+  @elseif $icon == "list-numbers"  { content: "q";}
+  @elseif $icon == "list-images"   { content: "³";}
+
+/* elements */
+  @elseif $icon == "star"          { content: "R";}
+  @elseif $icon == "heart"         { content: "N";}
+  @elseif $icon == "heart2"     { content: "O";}
+  @elseif $icon == "tag"           { content: ",";}
+  @elseif $icon == "link"          { content: "K";}
+  @elseif $icon == "date"          { content: "P";}
+  @elseif $icon == "mappin"        { content: "?";}
+  @elseif $icon == "search"        { content: "L";}
+
+/* comments */
+  @elseif $icon == "chat"          { content: "c";}
+  @elseif $icon == "speach"        { content: "d";}
+  @elseif $icon == "speach2"    { content: "d";}
+  @elseif $icon == "repost"        { content: "J";}
+
+/* social media */
+  @elseif $icon == "facbook"       { content: "f";}
+  @elseif $icon == "googleplus"    { content: "g";}
+  @elseif $icon == "linkedin"      { content: "l";}
+  @elseif $icon == "rss"           { content: "r";}
+  @elseif $icon == "skype"         { content: "s";}
+  @elseif $icon == "tumblr"        { content: "k";}
+  @elseif $icon == "twitter"       { content: "t";}
+  @elseif $icon == "vimeo"         { content: "m";}
+  @elseif $icon == "youtube"       { content: "y";}
+
+  @extend .iconify;
+}
+
+
+
