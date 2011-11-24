@@ -3,15 +3,10 @@
 @import "iconify-websymbols.scss";
 
 body {background: #f6f6f6; font-family:bitter, serif;}
-
-.page { width: 800px; margin: 0 auto; background: #eee;
-  padding: 0px 50px 50px;
-  border-radius:10px;
-  border:2px dotted #ddd;
-}
+.page { width: 800px; margin: 0 auto; background: #eee; padding: 0px 50px 50px; border-radius:10px; border:2px dotted #ddd;}
 
 h1 {
-  color: #e3e2e2;
+color: #e3e2e2;
   font: 4em 'Bitter', serif;
   text-shadow: 1px 2px 5px #999999;
   text-transform: uppercase;
@@ -25,12 +20,94 @@ h1:before {
   color:rgba(255,255,255,.9);
   text-shadow: 0px 0px 5px lightblue;
 }
+.iconlist {
+  -moz-column-count: 3;
+  -moz-column-gap: 20px;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 20px;
+}
+h3{background:#ddd; border-bottom:1px dotted #bbb; padding:3px; text-align:center;}
+.user:after       { @include icon(user) }
+.logout:after     { @include icon(logout) }
+.lock:after       { @include icon(lock) }
+.lock-open:after  { @include icon(lock-open) }
+
+.up:after         { @include icon(up) }
+.down:after       { @include icon(down) }
+.prev:after       { @include icon(prev) }
+.prev2:after      { @include icon(prev2) }
+.next:after       { @include icon(next) }
+.next2:after      { @include icon(next2) }
+.first:after      { @include icon(first) }
+.last:after       { @include icon(last) }
+.move:after       { @include icon(move) }
+.close:after      { @include icon(close) }
+.scale:after      { @include icon(scale) }
+.reload:after     { @include icon(reload) }
+.sync:after       { @include icon(sync) }
+.sort-up:after    { @include icon(sort-up) }
+.sort-down:after  { @include icon(sort-down) }
+.fold:after       { @include icon(fold-open) }
+.fold-closed:after{ @include icon(fold-closed) }
+.reply:after      { @include icon(reply) }
+.reply-all:after  { @include icon(reply-all) }
+.forward:after    { @include icon(forward) }
 
 
+.doc:after        { @include icon(doc) }
+.doc2:after       { @include icon(doc2) }
+.image:after      { @include icon(image) }
+.movie:after      { @include icon(movie) }
+.html:after       { @include icon(html) }
+.attachment:after { @include icon(attachment) }
+.folder:after     { @include icon(folder) }
+.cloud:after      { @include icon(cloud) }
+.mail:after       { @include icon(mail) }
+.terminal:after   { @include icon(terminal) }
+.archive:after   { @include icon(archive) }
 
-.test2:after{@include icon(twitter)}
-.test:before{@include icon(facebook)}
-.prev:before{@include icon(prev2)}
+.star:after       { @include icon(star) }
+.heart:after      { @include icon(heart) }
+.heart2:after     { @include icon(heart2) }
+.rating:after     { @include icon(rating) }
+.tag:after        { @include icon(tag) }
+.link:after       { @include icon(link) }
+.time:after       { @include icon(time) }
+.pin:after        { @include icon(pin) }
+.search:after     { @include icon(search) }
+.window-new:after     { @include icon(window-new) }
 
-.next:after{@include icon(next2)}
-  .next:hover{color:pink; font-size:5em;}
+.config:after     { @include icon(config) }
+
+.alert:after      { @include icon(alert) }
+.ok:after         { @include icon(ok) }
+.ok2:after        { @include icon(ok2) }
+.no:after         { @include icon(no) }
+
+.text:after       { @include icon(text) }
+.indent:after     { @include icon(indent) }
+.outdent:after    { @include icon(outdent) }
+
+
+.list:after       { @include icon(list) }
+.list-bullets:after{ @include icon(list-bullets) }
+.list-numbers:after{ @include icon(list-numbers) }
+.list-images:after{ @include icon(list-images) }
+.list-icons:after{ @include icon(list-icons) }
+
+
+.chat:after       { @include icon(chat) }
+.talk:after       { @include icon(talk) }
+.talk2:after      { @include icon(talk2) }
+.repost:after     { @include icon(repost) }
+
+
+.facbook:after    { @include icon(facbook) }
+.googleplus:after { @include icon(googleplus) }
+.linkedin:after   { @include icon(linkedin) }
+.rss:after        { @include icon(rss) }
+.skype:after      { @include icon(skype) }
+.tumblr:after     { @include icon(tumblr) }
+.twitter:after    { @include icon(twitter) }
+.vimeo:after      { @include icon(vimeo) }
+.youtube:after    { @include icon(youtube) }

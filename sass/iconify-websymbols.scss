@@ -35,6 +35,7 @@
   font-family: WebSymbolsRegular; //
   font-size: 1em;
   vertical-align: top;
+  padding:0 .3em;
 }
 
 @mixin icon($icon:twitter,$place:before){
@@ -48,7 +49,7 @@
 
 /* navigation */
   @elseif $icon == "up"            { content: ":";}
-  @elseif $icon == "up2"        { content: ";";}
+  @elseif $icon == "down"          { content: ";";}
   @elseif $icon == "prev"          { content: "(";}
   @elseif $icon == "prev2"         { content: "<";}
   @elseif $icon == "next"          { content: ")";}
@@ -62,20 +63,39 @@
   @elseif $icon == "sync"          { content: "V";}
   @elseif $icon == "sort-up"       { content: "{";}
   @elseif $icon == "sort-down"     { content: "}";}
-  @elseif $icon == "fold"          { content: "[";}
+  @elseif $icon == "fold-open"     { content: "[";}
   @elseif $icon == "fold-closed"   { content: "]";}
+  @elseif $icon == "reply"         { content: "h";}
+  @elseif $icon == "reply-all"     { content: "i";}
+  @elseif $icon == "forward"       { content: "j";}
 
-/* assets */
-  @elseif $icon == "view-portrait" { content: "a";}
-  @elseif $icon == "view-album"    { content: "a";}
+/* elements */
+  @elseif $icon == "doc"           { content: "a";}
+  @elseif $icon == "doc2"          { content: "b";}
   @elseif $icon == "image"         { content: "I";}
   @elseif $icon == "movie"         { content: "M";}
+  @elseif $icon == "link"          { content: "K";}
   @elseif $icon == "html"          { content: "H";}
   @elseif $icon == "attachment"    { content: "A";}
   @elseif $icon == "folder"        { content: "F";}
   @elseif $icon == "cloud"         { content: "C";}
   @elseif $icon == "mail"          { content: "@";}
   @elseif $icon == "terminal"      { content: "_";}
+  @elseif $icon == "archive"      { content: "Z";}
+  @elseif $icon == "rating"      { content: "u";}
+  @elseif $icon == "window-new"      { content: "D";}
+
+
+  @elseif $icon == "tag"           { content: ",";}
+  @elseif $icon == "time"          { content: "P";}
+  @elseif $icon == "pin"           { content: "?";}
+  @elseif $icon == "search"        { content: "L";}
+
+
+  @elseif $icon == "star"          { content: "R";}
+  @elseif $icon == "heart"         { content: "N";}
+  @elseif $icon == "heart2"        { content: "O";}
+
 
 /* action */
   @elseif $icon == "config"        { content: "S";}
@@ -83,9 +103,8 @@
 /* messages */
   @elseif $icon == "alert"         { content: "W";}
   @elseif $icon == "ok"            { content: "/";}
-  @elseif $icon == "ok2"        { content: ".";}
-  @elseif $icon == "no"            { content: ".";}
-  @elseif $icon == "delete"        { content: "'";}
+  @elseif $icon == "ok2"            { content: ".";}
+  @elseif $icon == "no"            { content: "'";}
 
 /* wysiwyg editor */
   @elseif $icon == "text"          { content: "T";}
@@ -97,21 +116,12 @@
   @elseif $icon == "list-bullets"  { content: "p";}
   @elseif $icon == "list-numbers"  { content: "q";}
   @elseif $icon == "list-images"   { content: "³";}
-
-/* elements */
-  @elseif $icon == "star"          { content: "R";}
-  @elseif $icon == "heart"         { content: "N";}
-  @elseif $icon == "heart2"     { content: "O";}
-  @elseif $icon == "tag"           { content: ",";}
-  @elseif $icon == "link"          { content: "K";}
-  @elseif $icon == "date"          { content: "P";}
-  @elseif $icon == "mappin"        { content: "?";}
-  @elseif $icon == "search"        { content: "L";}
+  @elseif $icon == "list-icons"   { content: "¹";}
 
 /* comments */
   @elseif $icon == "chat"          { content: "c";}
-  @elseif $icon == "speach"        { content: "d";}
-  @elseif $icon == "speach2"    { content: "d";}
+  @elseif $icon == "talk"          { content: "d";}
+  @elseif $icon == "talk2"          { content: "e";}
   @elseif $icon == "repost"        { content: "J";}
 
 /* social media */

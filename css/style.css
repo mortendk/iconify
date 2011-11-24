@@ -3,7 +3,7 @@
 */
 @font-face { font-family: 'WebSymbolsRegular'; src: url("../fonts/websymbols/websymbols-regular-webfont.eot"); src: url("../fonts/websymbols/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/websymbols/websymbols-regular-webfont.woff") format("woff"), url("../fonts/websymbols/websymbols-regular-webfont.ttf") format("truetype"), url("../fonts/websymbols/websymbols-regular-webfont.svg#WebSymbolsRegular") format("svg"); font-weight: normal; font-style: normal; }
 
-.iconify, h1:before, .test2:after, .test:before, .prev:before, .next:after { font-family: WebSymbolsRegular; font-size: 1em; vertical-align: top; }
+.iconify, h1:before, .user:after, .logout:after, .lock:after, .lock-open:after, .up:after, .down:after, .prev:after, .prev2:after, .next:after, .next2:after, .first:after, .last:after, .move:after, .close:after, .scale:after, .reload:after, .sync:after, .sort-up:after, .sort-down:after, .fold:after, .fold-closed:after, .reply:after, .reply-all:after, .forward:after, .doc:after, .doc2:after, .image:after, .movie:after, .html:after, .attachment:after, .folder:after, .cloud:after, .mail:after, .terminal:after, .archive:after, .star:after, .heart:after, .heart2:after, .rating:after, .tag:after, .link:after, .time:after, .pin:after, .search:after, .window-new:after, .config:after, .alert:after, .ok:after, .ok2:after, .no:after, .text:after, .indent:after, .outdent:after, .list:after, .list-bullets:after, .list-numbers:after, .list-images:after, .list-icons:after, .chat:after, .talk:after, .talk2:after, .repost:after, .facbook:after, .googleplus:after, .linkedin:after, .rss:after, .skype:after, .tumblr:after, .twitter:after, .vimeo:after, .youtube:after { font-family: WebSymbolsRegular; font-size: 1em; vertical-align: top; padding: 0 .3em; }
 
 body { background: #f6f6f6; font-family: bitter, serif; }
 
@@ -13,10 +13,148 @@ h1 { color: #e3e2e2; font: 4em 'Bitter', serif; text-shadow: 1px 2px 5px #999999
 
 h1:before { content: "C"; font-size: 1em; margin: -1em 1em 0em 0em; color: rgba(255, 255, 255, 0.9); text-shadow: 0px 0px 5px lightblue; }
 
-.test2:after { content: "t"; }
+.iconlist { -moz-column-count: 3; -moz-column-gap: 20px; -webkit-column-count: 3; -webkit-column-gap: 20px; }
 
-.prev:before { content: "<"; }
+h3 { background: #ddd; border-bottom: 1px dotted #bbb; padding: 3px; text-align: center; }
 
-.next:after { content: ">"; }
+.user:after { content: "U"; }
 
-.next:hover { color: pink; font-size: 5em; }
+.logout:after { content: "X"; }
+
+.lock:after { content: "x"; }
+
+.lock-open:after { content: "w"; }
+
+.up:after { content: ":"; }
+
+.down:after { content: ";"; }
+
+.prev:after { content: "("; }
+
+.prev2:after { content: "<"; }
+
+.next:after { content: ")"; }
+
+.next2:after { content: ">"; }
+
+.first:after { content: " "; }
+
+.last:after { content: " "; }
+
+.move:after { content: "~"; }
+
+.close:after { content: "×"; }
+
+.scale:after { content: "&"; }
+
+.reload:after { content: "*"; }
+
+.sync:after { content: "V"; }
+
+.sort-up:after { content: "{"; }
+
+.sort-down:after { content: "}"; }
+
+.fold:after { content: "["; }
+
+.fold-closed:after { content: "]"; }
+
+.reply:after { content: "h"; }
+
+.reply-all:after { content: "i"; }
+
+.forward:after { content: "j"; }
+
+.doc:after { content: "a"; }
+
+.doc2:after { content: "b"; }
+
+.image:after { content: "I"; }
+
+.movie:after { content: "M"; }
+
+.html:after { content: "H"; }
+
+.attachment:after { content: "A"; }
+
+.folder:after { content: "F"; }
+
+.cloud:after { content: "C"; }
+
+.mail:after { content: "@"; }
+
+.terminal:after { content: "_"; }
+
+.archive:after { content: "Z"; }
+
+.star:after { content: "R"; }
+
+.heart:after { content: "N"; }
+
+.heart2:after { content: "O"; }
+
+.rating:after { content: "u"; }
+
+.tag:after { content: ","; }
+
+.link:after { content: "K"; }
+
+.time:after { content: "P"; }
+
+.pin:after { content: "?"; }
+
+.search:after { content: "L"; }
+
+.window-new:after { content: "D"; }
+
+.config:after { content: "S"; }
+
+.alert:after { content: "W"; }
+
+.ok:after { content: "/"; }
+
+.ok2:after { content: "."; }
+
+.no:after { content: "'"; }
+
+.text:after { content: "T"; }
+
+.indent:after { content: "n"; }
+
+.outdent:after { content: "o"; }
+
+.list:after { content: "²"; }
+
+.list-bullets:after { content: "p"; }
+
+.list-numbers:after { content: "q"; }
+
+.list-images:after { content: "³"; }
+
+.list-icons:after { content: "¹"; }
+
+.chat:after { content: "c"; }
+
+.talk:after { content: "d"; }
+
+.talk2:after { content: "e"; }
+
+.repost:after { content: "J"; }
+
+.facbook:after { content: "f"; }
+
+.googleplus:after { content: "g"; }
+
+.linkedin:after { content: "l"; }
+
+.rss:after { content: "r"; }
+
+.skype:after { content: "s"; }
+
+.tumblr:after { content: "k"; }
+
+.twitter:after { content: "t"; }
+
+.vimeo:after { content: "m"; }
+
+.youtube:after { content: "y"; }
