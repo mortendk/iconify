@@ -1,8 +1,4 @@
 /*
-    --------------------------------------------------------------
-    Iconify 0.2
-    Quick n easy icons from font files to you markup
-    http://mortendk.github.com/iconify
     --------------------------* * *------------------------------------
                                       ___
      __                         __  /'___\
@@ -14,6 +10,12 @@
                                                 /\___/
                                                 \/__/
     ---------------------------* * *-----------------------------------
+
+    Iconify 0.2
+
+    --------------------------------------------------------------
+    Quick n easy icons from font files to you markup
+    http://mortendk.github.com/iconify
 */
 
 // the font "websymbols" can be downloaded here:
@@ -39,7 +41,7 @@
 }
 
 @mixin icon($icon:twitter,$place:before){
-  @if $icon     == ""         { content: "t";}
+  @if $icon     == ""              { content: " ";}
 
 /* user */
   @elseif $icon == "user"          { content: "U";}
@@ -60,69 +62,66 @@
   @elseif $icon == "close"         { content: "×";}
   @elseif $icon == "scale"         { content: "&";}
   @elseif $icon == "reload"        { content: "*";}
-  @elseif $icon == "sync"          { content: "V";}
   @elseif $icon == "sort-up"       { content: "{";}
   @elseif $icon == "sort-down"     { content: "}";}
   @elseif $icon == "fold-open"     { content: "[";}
   @elseif $icon == "fold-closed"   { content: "]";}
-  @elseif $icon == "reply"         { content: "h";}
-  @elseif $icon == "reply-all"     { content: "i";}
-  @elseif $icon == "forward"       { content: "j";}
 
-/* elements */
+/* assets */
   @elseif $icon == "doc"           { content: "a";}
   @elseif $icon == "doc2"          { content: "b";}
   @elseif $icon == "image"         { content: "I";}
   @elseif $icon == "movie"         { content: "M";}
-  @elseif $icon == "link"          { content: "K";}
-  @elseif $icon == "html"          { content: "H";}
   @elseif $icon == "attachment"    { content: "A";}
   @elseif $icon == "folder"        { content: "F";}
+  @elseif $icon == "archive"       { content: "Z";}
+  @elseif $icon == "link"          { content: "K";}
+  @elseif $icon == "html"          { content: "H";}
+  @elseif $icon == "text"          { content: "T";}
+
+/* app */
   @elseif $icon == "cloud"         { content: "C";}
-  @elseif $icon == "mail"          { content: "@";}
   @elseif $icon == "terminal"      { content: "_";}
-  @elseif $icon == "archive"      { content: "Z";}
-  @elseif $icon == "rating"      { content: "u";}
-  @elseif $icon == "window-new"      { content: "D";}
-
-
-  @elseif $icon == "tag"           { content: ",";}
-  @elseif $icon == "time"          { content: "P";}
-  @elseif $icon == "pin"           { content: "?";}
-  @elseif $icon == "search"        { content: "L";}
-
-
-  @elseif $icon == "star"          { content: "R";}
-  @elseif $icon == "heart"         { content: "N";}
-  @elseif $icon == "heart2"        { content: "O";}
-
 
 /* action */
   @elseif $icon == "config"        { content: "S";}
+  @elseif $icon == "sync"          { content: "V";}
+  @elseif $icon == "window-new"    { content: "D";}
+  @elseif $icon == "repost"        { content: "J";}
+  @elseif $icon == "search"        { content: "L";}
 
-/* messages */
+/* mail */
+  @elseif $icon == "chat"          { content: "c";}
+  @elseif $icon == "talk"          { content: "d";}
+  @elseif $icon == "talk2"         { content: "e";}
+  @elseif $icon == "mail"          { content: "@";}
+  @elseif $icon == "reply"         { content: "h";}
+  @elseif $icon == "reply-all"     { content: "i";}
+  @elseif $icon == "forward"       { content: "j";}
+
+/* status */
   @elseif $icon == "alert"         { content: "W";}
   @elseif $icon == "ok"            { content: "/";}
-  @elseif $icon == "ok2"            { content: ".";}
+  @elseif $icon == "ok2"           { content: ".";}
   @elseif $icon == "no"            { content: "'";}
-
-/* wysiwyg editor */
-  @elseif $icon == "text"          { content: "T";}
-  @elseif $icon == "indent"        { content: "n";}
-  @elseif $icon == "outdent"       { content: "o";}
 
 /* lists */
   @elseif $icon == "list"          { content: "²";}
+  @elseif $icon == "indent"        { content: "n";}
+  @elseif $icon == "outdent"       { content: "o";}
   @elseif $icon == "list-bullets"  { content: "p";}
   @elseif $icon == "list-numbers"  { content: "q";}
   @elseif $icon == "list-images"   { content: "³";}
-  @elseif $icon == "list-icons"   { content: "¹";}
+  @elseif $icon == "list-icons"    { content: "¹";}
 
-/* comments */
-  @elseif $icon == "chat"          { content: "c";}
-  @elseif $icon == "talk"          { content: "d";}
-  @elseif $icon == "talk2"          { content: "e";}
-  @elseif $icon == "repost"        { content: "J";}
+/*  */
+  @elseif $icon == "star"          { content: "R";}
+  @elseif $icon == "heart"         { content: "N";}
+  @elseif $icon == "heart2"        { content: "O";}
+  @elseif $icon == "tag"           { content: ",";}
+  @elseif $icon == "rating"        { content: "u";}
+  @elseif $icon == "time"          { content: "P";}
+  @elseif $icon == "pin"           { content: "?";}
 
 /* social media */
   @elseif $icon == "facbook"       { content: "f";}

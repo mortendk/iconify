@@ -1,25 +1,34 @@
-@import url(http://fonts.googleapis.com/css?family=Bitter);
-//import the iconset
-@import "iconify-websymbols.scss";
+/*
+    --------------------------------------------------------------
+    Iconify 0.2
+    Quick n easy icons from font files to you markup
+    http://mortendk.github.com/iconify
+    --------------------------* * *------------------------------------
+                                      ___
+     __                         __  /'___\
+    /\_\    ___    ___     ___ /\_\/\ \__/  __  __
+    \/\ \  /'___\ / __`\ /' _ `\/\ \ \ ,__\/\ \/\ \
+     \ \ \/\ \__//\ \L\ \/\ \/\ \ \ \ \ \_/\ \ \_\ \
+      \ \_\ \____\ \____/\ \_\ \_\ \_\ \_\  \/`____ \
+       \/_/\/____/\/___/  \/_/\/_/\/_/\/_/   `/___/> \
+                                                /\___/
+                                                \/__/
+    ---------------------------* * *-----------------------------------
+*/
 
-body {background: #f6f6f6; font-family:bitter, serif;}
+
+// get the fonts
+@import url(http://fonts.googleapis.com/css?family=Bitter);
+// import the iconset
+@import "iconify-pictos.scss";
+
+body { background: #f6f6f6; font-family:bitter, serif;}
 .page { width: 800px; margin: 0 auto; background: #eee; padding: 0px 50px 50px; border-radius:10px; border:2px dotted #ddd;}
 
-h1 {
-color: #e3e2e2;
-  font: 4em 'Bitter', serif;
-  text-shadow: 1px 2px 5px #999999;
-  text-transform: uppercase;
-  vertical-align: top;
-}
+h1 { color: #e3e2e2; font: 4em 'Bitter', serif; text-shadow: 1px 2px 5px #999999; text-transform: uppercase;}
+h1:before { @include icon(cloud); color:rgba(255,255,255,.9); text-shadow: 0px 0px 5px lightblue;}
+h1:after{ @include icon(heart); margin:-1em 1em 0em 0em; color:rgba(255,255,255,.9); text-shadow: 0px 0px 5px pink;}
 
-h1:before {
-  @include icon(cloud);
-  font-size:1em;
-  margin:-1em 1em 0em 0em;
-  color:rgba(255,255,255,.9);
-  text-shadow: 0px 0px 5px lightblue;
-}
 .iconlist {
   -moz-column-count: 3;
   -moz-column-gap: 20px;
@@ -27,11 +36,16 @@ h1:before {
   -webkit-column-gap: 20px;
 }
 h3{background:#ddd; border-bottom:1px dotted #bbb; padding:3px; text-align:center;}
+div{padding:.3em 1em; border-bottom:1px solid #bbb;}
+//user
 .user:after       { @include icon(user) }
+.users:after      { @include icon(users) }
 .logout:after     { @include icon(logout) }
 .lock:after       { @include icon(lock) }
 .lock-open:after  { @include icon(lock-open) }
+.key:after        { @include icon(key) }
 
+.home:after       { @include icon(home) }
 .up:after         { @include icon(up) }
 .down:after       { @include icon(down) }
 .prev:after       { @include icon(prev) }
@@ -62,12 +76,19 @@ h3{background:#ddd; border-bottom:1px dotted #bbb; padding:3px; text-align:cente
 .attachment:after { @include icon(attachment) }
 .folder:after     { @include icon(folder) }
 .cloud:after      { @include icon(cloud) }
+.cloudhost:after  { @include icon(cloudhost) }
 .mail:after       { @include icon(mail) }
 .terminal:after   { @include icon(terminal) }
-.archive:after   { @include icon(archive) }
+.archive:after    { @include icon(archive) }
+
+.print:after    { @include icon(print) }
+.edit:after    { @include icon(edit) }
+.download:after    { @include icon(download) }
+.help:after    { @include icon(help) }
 
 .star:after       { @include icon(star) }
-.heart:after      { @include icon(heart) }
+.heart:after      { @include icon(heart);  color:red;}
+.heart{color:#444;}
 .heart2:after     { @include icon(heart2) }
 .rating:after     { @include icon(rating) }
 .tag:after        { @include icon(tag) }
@@ -75,7 +96,7 @@ h3{background:#ddd; border-bottom:1px dotted #bbb; padding:3px; text-align:cente
 .time:after       { @include icon(time) }
 .pin:after        { @include icon(pin) }
 .search:after     { @include icon(search) }
-.window-new:after     { @include icon(window-new) }
+.window-new:after { @include icon(window-new) }
 
 .config:after     { @include icon(config) }
 
@@ -93,7 +114,7 @@ h3{background:#ddd; border-bottom:1px dotted #bbb; padding:3px; text-align:cente
 .list-bullets:after{ @include icon(list-bullets) }
 .list-numbers:after{ @include icon(list-numbers) }
 .list-images:after{ @include icon(list-images) }
-.list-icons:after{ @include icon(list-icons) }
+.list-icons:after { @include icon(list-icons) }
 
 
 .chat:after       { @include icon(chat) }
